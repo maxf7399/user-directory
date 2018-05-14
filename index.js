@@ -3,7 +3,11 @@ const changeHeading = function() {
   }
 const heading = document.querySelector('button')
 heading.addEventListener('click', changeHeading)
-
+const formChange = function() { 
+    document.getElementsByClassName('h1')[0].innerHTML = document.getElementById('form1').submit()
+}
+const header = document.querySelector('form')
+header.addEventListener('submit', formChange)
 
 //homework: Make the button change the text of the heading. 
 
