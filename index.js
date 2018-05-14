@@ -1,5 +1,5 @@
 const changeHeading = function() {
-    document.getElementsByClassName('h1')[0].innerHTML = 'It was clicked!'
+    document.getElementsByClassName('h2')[0].innerHTML = 'It was clicked!'
   }
 const heading = document.querySelector('button')
 heading.addEventListener('click', changeHeading)
