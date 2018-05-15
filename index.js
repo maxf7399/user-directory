@@ -3,8 +3,9 @@ const handleSubmit = function(ev) {
     ev.preventDefault()
     const form = ev.target
     const userName = form.userName.value
-    const heading = document.querySelector('h1')
-    heading.textContent = userName
+    const users = document.querySelector('#users')
+    users.textContent += ' ' + userName
+    form.userName.value = ''
 }
 
 form.addEventListener('submit', handleSubmit)
