@@ -1,18 +1,9 @@
-const changeHeading = function() {
-    document.getElementsByClassName('h2')[0].innerHTML = 'It was clicked!'
-  }
-const heading = document.querySelector('button')
-heading.addEventListener('click', changeHeading)
-const formChange = function() { 
-    document.getElementsByClassName('h1')[0].innerHTML = document.getElementById('form1').submit()
+const form = document.querySelector('form#userForm')
+const handleSubmit = function(ev) {
+    ev.preventDefault()
+    const heading = document.querySelector('h1')
+    const input = document.querySelector('input')
+    heading.textContent = input.value
 }
-const header = document.querySelector('form')
-header.addEventListener('submit', formChange)
 
-//homework: Make the button change the text of the heading. 
-
-//bonus credit: add multiple headings to the page, and make the button
-//change the _second_ ones
-
-//super mega bonus credit: add a form to the page, add a text input to the form, update the 
-//heading with the text that you type in the text input
+form.addEventListener('submit', handleSubmit)
