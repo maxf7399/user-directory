@@ -10,18 +10,24 @@ function renderColor(color) {
 }
 
 function renderListItem(label, value) {
-  const item = document.createElement('li')
-  item.textContent = `${label}: `
+  const item = document.createElement('li') //dt contains the label, dd contains the description
+
+  const term = document.createElement('dt')
+  term.textContent = label
+
+  const description = document.createElement('dd')
   try {
-    item.appendChild(value)
+    description.appendChild(value)
   } catch(e) {
-    item.textContent += value
+    description.textContent += value
   }
+  item.appendChild(term)
+  item.appendChild(description)
   return item
 }
 
 function renderList(data) {
-  const list = document.createElement('ul')
+  const list = document.createElement('dl')
   Object.keys(data).forEach(label => {
     const item = renderListItem(label, data[label])
     list.appendChild(item)
