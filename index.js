@@ -2,11 +2,7 @@ const form = document.querySelector('form#userForm')
 const handleSubmit = function(ev) {
     ev.preventDefault()
     const form = ev.target
-    
-  
     users.appendChild(renderList())
-
-   
     form.reset()
     form.userName.focus()
 }
