@@ -16,3 +16,15 @@ main {
     border: 1px solid black;
     padding: 1rem;
 }
+
+dl li { 
+    list-style: none;
+    margin-top: 1rem;
+}
+
+dl:nth-of-type(even) {
+    background-color: crimson;
+}
+dl:nth-of-type(odd) { 
+    background-color: white;
+}
