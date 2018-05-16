@@ -18,10 +18,16 @@ function renderListItem() {
     return document.createElement('li')
 }
 function renderList() { 
-    const userName = form.userName.value
-    const age = form.age.value
-    const users = document.querySelector('#users')
-    const favoriteColor = form.favoriteColor.value
+    const user = {
+        'Name': form.userName.value,
+        'Age': form.age.value,
+        'Favorite Color': form.favoriteColor.value,
+    }
+   
+    /*Object.keys(user).map(function(label) { 
+        const item = renderListItem(label, user[label])
+        list.appendChild(item) this makes the .textContent and the appendChild not needed anymore
+    })   this is for renderListItem, see Davey's code for fixing of renderListItem */
     const list = document.createElement('ul')
     const nameItem = renderListItem()
     nameItem.textContent = `Name: ${userName}`
