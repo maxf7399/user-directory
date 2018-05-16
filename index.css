@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 body {
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
     background-color:lightgoldenrodyellow;
     text-align: center;
 }
 ul {
     display: inline-block;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+#userForm {
+    background-color: indigo;
+    border: 1px solid black;
+    padding: 1rem;
 }
