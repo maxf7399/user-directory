@@ -1,15 +1,2 @@
-homework day two: 
-*create a new function called 'renderColor' that returns a 'div' element, basically move colorDiv to this new function
-*call that function when adding 'div' to 'colorItem'
-
-bonus: 
-*create a new function called 'renderListItem'
-*use it to create the list items for each stat
-
-super mega bonus 
-*create a new function called 'rednerlist'
-*use it to create the list for each person's stats.
-*call 'renderListItem' from 'renderList', not directly from 'handleSubmit'
-
-hyper fighting super mega bonus:
-try using document.createElement instead of innerHtml.
+recap of homework day two: 
+look at git for renderListItem as well as renderList 
